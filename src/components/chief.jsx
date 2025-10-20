@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import basira from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/BASIRA-TITILAYO-SMITH.jpg";
 import adeyemi from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/ADEYEMI-IDOWU.jpg";
@@ -101,11 +100,11 @@ const slides = [
 export function Chiefs() {
   const [current, setCurrent] = useState(0);
 
-  // Auto-advance every 5 seconds
+  // Auto-advance every 20 seconds
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
-    }, 5000);
+    }, 10000);
     return () => clearInterval(timer);
   }, []);
 
@@ -117,40 +116,57 @@ export function Chiefs() {
 
   return (
     <section className="flex flex-col items-center justify-center w-full py-8">
-  <div className="relative w-full max-w-4xl h-[400px] bg-black rounded-lg shadow-lg overflow-hidden">
-  <img src={slide.image} alt={slide.h3} className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-text-primary bg-opacity-40 flex flex-col justify-end p-6 py-100">
-          <h3 className="text-xlg font-semibold text-purple-900 mb-1">{slide.h3}</h3>
-          <h1 className="text-2xl md:text-3xl font-bold text-black mb-2">{slide.h1}</h1>
-          
-          <p className="text-purple-700 mb-4 text-2xl">{slide.p}</p>
-          <div className="flex space-x-4 mb-2">
-            {slide.socials.map((s, i) => (
-              <a key={i} href={s.href} target="_blank" rel="noopener noreferrer" className="text-black text-xl hover:text-purple-300">
-                <i className={s.icon}></i>
-              </a>
-            ))}
-          </div>
+      <div className="w-full max-w-4xl">
+        {/* Image container */}
+        <div className="relative w-full h-[400px] bg-black rounded-lg shadow-lg overflow-hidden">
+          <img src={slide.image} alt={slide.h3} className="w-full h-220 object-cover" />
+
+          <button
+            onClick={prev}
+            className="absolute left-2 top-1/2 -translate-y-1/2 bg-purple-500 bg-opacity-70 rounded-full p-2 hover:bg-opacity-100 transition"
+            aria-label="Previous slide"
+          >
+            &#8592;
+          </button>
+          <button
+            onClick={next}
+            className="absolute right-2 top-1/2 -translate-y-1/2 bg-purple-500 bg-opacity-70 rounded-full p-2 hover:bg-opacity-100 transition"
+            aria-label="Next slide"
+          >
+            &#8594;
+          </button>
         </div>
-        {/* Navigation Buttons */}
-  <button onClick={prev} className="absolute left-2 top-1/2 -translate-y-1/2 bg-purple-500 bg-opacity-70 rounded-full p-2 hover:bg-opacity-100 transition">
-          <span className="sr-only">Previous</span>
-          &#8592;
-        </button>
-        <button onClick={next} className="absolute right-2 top-1/2 -translate-y-1/2 bg-purple-500 bg-opacity-70 rounded-full p-2 hover:bg-opacity-100 transition">
-          <span className="sr-only">Next</span>
-          &#8594;
-        </button>
-        {/* Dots */}
-        <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex space-x-2">
-          {slides.map((_, idx) => (
-            <button
-              key={idx}
-              onClick={() => goTo(idx)}
-              className={`w-3 h-3 rounded-full ${current === idx ? 'bg-white' : 'bg-purple-400'} border-2 border-white`}
-              aria-label={`Go to slide ${idx + 1}`}
-            ></button>
-          ))}
+          <div className="mt-4 bg-white rounded-lg shadow p-6">
+          <h3 className="text-lg font-semibold text-purple-900 mb-1">{slide.h3}</h3>
+          <h1 className="text-2xl md:text-3xl font-bold text-black mb-2">{slide.h1}</h1>
+          <p class="nameee" className="text-gray-500 mb-4 text-base md:text-lg">{slide.p}</p>
+
+          <div className="flex items-center justify-between">
+            <div className="flex space-x-4">
+              {slide.socials.map((s, i) => (
+                <a
+                  key={i}
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-black text-xl hover:text-purple-500"
+                  aria-label={`Open ${s.href}`}
+                >
+                  <i className={s.icon}></i>
+                </a>
+              ))}
+            </div>
+            <div className="flex space-x-2">
+              {slides.map((_, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => goTo(idx)}
+                  className={`w-3 h-3 rounded-full ${current === idx ? "bg-purple-700" : "bg-gray-300"} border-2 border-white`}
+                  aria-label={`Go to slide ${idx + 1}`}
+                />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>

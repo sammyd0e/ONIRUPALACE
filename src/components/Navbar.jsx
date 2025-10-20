@@ -8,14 +8,10 @@ const navItems = [
   { name: "Culture", href: "/culture" },
   { name: "Empowerment", href: "/empowerment" },
   { name: "Health", href: "#projects" },
-  { name: "Enviroment", href: "#contact" },
+  { name: "Environment", href: "/environment" },
   { name: "Infastructure", href: "/heritagehub" },
   { name: "Welfare", href: "/heritagehub" },
-
-  
-
-
-];
+]; 
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -43,7 +39,7 @@ export const Navbar = () => {
         >
           <span className="relative z-10 flex items-center gap-2">
             <img src="/projects/LOGO.ONIRU.jpeg" alt="Oniru Logo" className="h-8 w-8 object-contain rounded-full" />
-            <span className="text-glow text-foreground">Oniru Kindom</span>
+            <span className="text-glow text-foreground text-primary"> <span class='nameee'>Oniru Kindom</span></span>
           </span>
         </a>
 
@@ -53,7 +49,7 @@ export const Navbar = () => {
             <a
               key={key}
               href={item.href}
-              className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                class='nameee' className="text-foreground/80 hover:text-primary transition-colors duration-300"
             >
               {item.name}
             </a>
@@ -71,7 +67,7 @@ export const Navbar = () => {
         </button>
 
         <div
-          className={cn(
+           className={cn(
             "fixed inset-0 bg-background/95 backdroup-blur-md z-40 flex flex-col items-center justify-center",
             "transition-all duration-300 md:hidden",
             isMenuOpen
@@ -84,7 +80,7 @@ export const Navbar = () => {
               <a
                 key={key}
                 href={item.href}
-                className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                 class='nameee'className="text-foreground/80 hover:text-primary transition-colors duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}

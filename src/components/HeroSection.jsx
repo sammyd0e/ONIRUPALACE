@@ -3,30 +3,30 @@ import { ArrowDown } from "lucide-react";
 export const HeroSection = () => {
   return (
     <section
-      id="hero"
-      className="relative min-h-screen flex flex-col items-center justify-center px-4
-                    h-64 w-full bg-[url('/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/BGM6.JPEG')] bg-cover bg-center"
+  id="hero"
+  className="relative min-h-screen flex flex-col items-center justify-center px-4 w-full
+             bg-[url('/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/BGM7.jpeg')] bg-cover bg-center"
      >
       <div className="container max-w-4xl mx-auto text-center z-10">
-        <div className="space-y-6">
+        <div className="space-y-6 align-center">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-            <span className="opacity-0 animate-fade-in text-primary"> HIS ROYAL MAJESTY<br /></span>
-            <span className="text-white opacity-0 animate-fade-in-delay-1">
+            <span class='name' className="opacity-0 animate-fade-in text-primary-900 text-2xl "> <br /><br /> HIS ROYAL MAJESTY<br /></span>
+            <span className="text-black opacity-0 animate-fade-in-delay-1">
               {" "}
               OBA
             </span>
-            <span className="text-white ml-2 opacity-0 animate-fade-in-delay-2">
+            <span class='name'className="text-black ml-2 opacity-0 animate-fade-in-delay-2 align-center">
               {" "}
-              ABDULWASIU OMOGBOLAHAN  
+           ABDULWASIU 
             </span>
-             <span className="text-white ml-2 opacity-0 animate-fade-in-delay-3">
+             <span class='name' className="text-black md:text-6xl text-3xl ml-2 opacity-0 animate-fade-in-delay-3">
               {" "}
-              LAWAL (CON)
+              OMOGBOLAHAN LAWAL (CON)
             </span>
-            <span><p>ABISOGUN II</p></span>
+            <span><p class='name' className="text-2xl">ABISOGUN II</p></span>
           </h1>
 
-          <p className="text-white md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3 ">
+          <p class='nameee' className="text-black md:text-2xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3  ">
             The 15th Oniru of Iruland, a visionary leader dedicated to the
             progress and prosperity of his community.
             
@@ -34,7 +34,7 @@ export const HeroSection = () => {
         
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
             <a href="#projects" className="cosmic-button">
-              Achievements
+              <span class='nameee'>Achievements</span>
             </a>
           </div>
         </div>
