@@ -4,4 +4,4 @@
 
 [build.environment]
   # Pin Node version for Netlify builds (Netlify respects .nvmrc and this env var)
-  NODE_VERSION = "18"
+  NODE_VERSION = "20"
