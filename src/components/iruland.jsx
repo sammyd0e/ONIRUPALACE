@@ -232,7 +232,7 @@ const ContentSection = ({ title, children, mediaTitle, mediaDescription, mediaTy
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
           {/* Media Column */}
           {mediaTitle && (
-            <div className="lg:col-span-1 order-1 lg:order-none">
+            <div className="lg:col-span-1 order-1 lg:order-0">
               <MediaPlaceholder
                 type={mediaType}
                 title={mediaTitle}
@@ -243,7 +243,7 @@ const ContentSection = ({ title, children, mediaTitle, mediaDescription, mediaTy
             </div>
           )}
           {/* Text Column */}
-          <div className={`text-gray-300 space-y-6 text-lg leading-relaxed ${mediaTitle ? 'lg:col-span-2 order-2 lg:order-none' : 'lg:col-span-3'}`}>
+          <div className={`text-gray-300 space-y-6 text-lg leading-relaxed ${mediaTitle ? 'lg:col-span-2 order-2 lg:order-0' : 'lg:col-span-3'}`}>
             {children}
           </div>
         </div>
@@ -478,7 +478,7 @@ const App = () => {
 
       {/* Global Loading Spinner */}
       {isLoading && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[60]">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center `z-60`">
           <div className="flex flex-col items-center p-6 bg-gray-800 rounded-lg shadow-xl">
             <div className="animate-spin rounded-full h-12 w-12 border-4 border-t-4 border-t-blue-500 border-gray-600 mb-3"></div>
             <p className="text-white text-lg">Loading...</p>
