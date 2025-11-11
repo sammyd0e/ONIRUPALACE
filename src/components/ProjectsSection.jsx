@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import police from '/projects/police.jpg'
 import traffic from '/projects/TRAFFICONIRU.png'
 import gazette from '/projects/gazette.png'
-import eststeoffice from '/projects/estateoffice.jpeg'
+import eststeoffice from '/projects/estateOffice.jpeg'
 import intheeyesbook from '/projects/in the eyes book.jpg'
 import mosque from '/projects/onirucentralmosque.png'
 import mexcio from '/projects/mexicoambessdor.png'
