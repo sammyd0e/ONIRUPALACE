@@ -1,12 +1,12 @@
 import { ArrowUp } from "lucide-react";
-import access from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/access.png"
-import zenith from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/zenith.jpeg"
-import navy from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/navy.jpeg"
-import four from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/fourpoints.png"
-import terra from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/terrakulcture.png"
-import council from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/COUNC.jpeg"
-import raddington from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/redddington.jpeg"
-import nigeriannavy from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/nigerianNavy.jpeg"
+import access from "/projects/access.png"
+import zenith from "/projects/zenith.jpeg"
+import navy from "/projects/navy.jpeg"
+import four from "/projects/fourpoints.png"
+import terra from "/projects/terrakulcture.png"
+import council from "/projects/COUNC.jpeg"
+import raddington from "/projects/redddington.jpeg"
+import nigeriannavy from "/projects/nigerianNavy.jpeg"
 
 
 

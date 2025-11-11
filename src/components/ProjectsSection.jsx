@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import { ArrowDown, ArrowRight, ExternalLink, Github } from "lucide-react";
-import fire from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/firefighters.jpeg";
-import health from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/healthcenter.jpeg"
+import fire from "/projects/firefighters.jpeg";
+import health from "/projects/healthcenter.jpeg"
 import { Link } from "react-router-dom";
-import police from '/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/police.jpg'
-import traffic from '/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/TRAFFICONIRU.png'
-import gazette from '/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/gazette.png'
-import eststeoffice from '/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/estateoffice.jpeg'
-import intheeyesbook from '/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/in the eyes book.jpg'
-import mosque from '/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/onirucentralmosque.png'
-import mexcio from '/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/mexicoambessdor.png'
+import police from '/projects/police.jpg'
+import traffic from '/projects/TRAFFICONIRU.png'
+import gazette from '/projects/gazette.png'
+import eststeoffice from '/projects/estateoffice.jpeg'
+import intheeyesbook from '/projects/in the eyes book.jpg'
+import mosque from '/projects/onirucentralmosque.png'
+import mexcio from '/projects/mexicoambessdor.png'
 const projects = [
   {
     id: 1,

@@ -1,30 +1,30 @@
 import { Briefcase, Code, User, X } from "lucide-react";
-import imgP from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/self-img.jpg";
-import teenager from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/tennagerkabiyesi.jpg"
-import ADC from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/kabiyesiXADC.jpg"
-import ADCII from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/serviceofficer.jpg"
-import shetima from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/kabiyesiXsetima.jpg"
+import imgP from "/projects/self-img.jpg";
+import teenager from "/projects/tennagerkabiyesi.jpg"
+import ADC from "/projects/kabiyesiXADC.jpg"
+import ADCII from "/projects/serviceofficer.jpg"
+import shetima from "/projects/kabiyesiXsetima.jpg"
 
 import { useState, useEffect } from "react";
-import onigefon from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/onigefon.jpeg";
-import mabogunje from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/mabogunje.jpeg";
-import ihuntayi from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/ihuntayi.jpeg";
-import odudu from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/odudu.jpeg";
-import abanu from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/abanu.jpeg";
-import olaletan from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/olaletan.jpeg"
-import orisasanya from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/orisasanya.jpeg"
-import orunbe from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/orunbe.jpeg"
-import abisogun from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/abisogun.jpeg"
-import akiogun from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/akiogun.jpeg"
-import ogunyemi from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/ogunyemi.jpeg"
-import odunloye from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/odunloye.jpeg"
-import abiodun from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/abiodun.jpeg"
-import idowu from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/abiodun.jpeg"
+import onigefon from "/projects/onigefon.jpeg";
+import mabogunje from "/projects/mabogunje.jpeg";
+import ihuntayi from "/projects/ihuntayi.jpeg";
+import odudu from "/projects/odudu.jpeg";
+import abanu from "/projects/abanu.jpeg";
+import olaletan from "/projects/olaletan.jpeg"
+import orisasanya from "/projects/orisasanya.jpeg"
+import orunbe from "/projects/orunbe.jpeg"
+import abisogun from "/projects/abisogun.jpeg"
+import akiogun from "/projects/akiogun.jpeg"
+import ogunyemi from "/projects/ogunyemi.jpeg"
+import odunloye from "/projects/odunloye.jpeg"
+import abiodun from "/projects/abiodun.jpeg"
+import idowu from "/projects/abiodun.jpeg"
 
-import old from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/bridgeold.jpg"
-import neww from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/bridgenew.jpg"
-import ikoyinew from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/ikoyiclubnew.jpg"
-import ikoyiold from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/ikoyiclubold.jpg"
+import old from "/projects/bridgeold.jpg"
+import neww from "/projects/bridgenew.jpg"
+import ikoyinew from "/projects/ikoyiclubnew.jpg"
+import ikoyiold from "/projects/ikoyiclubold.jpg"
 
 
 

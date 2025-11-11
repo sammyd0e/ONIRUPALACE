@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import elegbafeast from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/chiefedited.jpg";
+import elegbafeast from "/projects/chiefedited.jpg";
 import { Event } from "./event";
 import { Chiefs } from "./chief";
-import whiteCAP1 from '/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/whiteCAP1.png'
-import whiteCAP2 from '/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/whiteCAP2.png'
-import whiteCAP3 from '/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/whiteCAP3.png'
-import whiteCapALL from '/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/whiteCapALL.png'
+import whiteCAP1 from '/projects/whiteCAP1.png'
+import whiteCAP2 from '/projects/whiteCAP2.png'
+import whiteCAP3 from '/projects/whiteCAP3.png'
+import whiteCapALL from '/projects/whiteCapALL.png'
 
 export const SkillsSection = () => {
   const [activeSection, setActiveSection] = useState(null); // 'events', 'chiefs', etc.

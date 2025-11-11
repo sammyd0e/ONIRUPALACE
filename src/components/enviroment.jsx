@@ -2,10 +2,10 @@ import { Navbar } from "./Navbar.jsx";
 import { ThemeToggle } from "./ThemeToggle.jsx";
 import { StarBackground } from './StarBackground.jsx'
 import { Footer } from "./Footer.jsx";
-import cleaning from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/cleaning.JPG"
-import plants from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/plants.JPG"
-import lawman from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/LAWMA.JPG"
-import clanningII from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/cleaningII.JPG"
+import cleaning from "/projects/cleaning.JPG"
+import plants from "/projects/plants.JPG"
+import lawman from "/projects/LAWMA.JPG"
+import clanningII from "/projects/cleaningII.JPG"
 
 
 export function ENviroment() {

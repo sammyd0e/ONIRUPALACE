@@ -1,4 +1,4 @@
-import hero from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/hero1.jpg";
+import hero from "/projects/hero1.jpg";
 
 export const Healthone = () => {
   return (

@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import basira from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/BASIRA-TITILAYO-SMITH.jpg";
-import adeyemi from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/ADEYEMI-IDOWU.jpg";
-import muyiwa from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/MUYIWA GBADEGESIN.jpg";
-import lukmon from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/LUMON MUSTAPHA.jpg";
-import bolanle from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/BOLANLEAUSTENPETERS.jpg";
+import basira from "/projects/BASIRA-TITILAYO-SMITH.jpg";
+import adeyemi from "/projects/ADEYEMI-IDOWU.jpg";
+import muyiwa from "/projects/MUYIWA GBADEGESIN.jpg";
+import lukmon from "/projects/LUMON MUSTAPHA.jpg";
+import bolanle from "/projects/BOLANLEAUSTENPETERS.jpg";
 
 
 const slides = [

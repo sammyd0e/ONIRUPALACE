@@ -5,7 +5,7 @@ export const HeroSection = () => {
     <section
   id="hero"
   className="relative min-h-screen flex flex-col items-center justify-center px-4 w-full
-             bg-[url('/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/BGM7.jpeg')] bg-cover bg-center"
+             bg-[url('/projects/BGM7.jpeg')] bg-cover bg-center"
      >
       <div className="container max-w-4xl mx-auto text-center z-10">
         <div className="space-y-6 align-center">

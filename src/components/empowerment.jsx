@@ -1,17 +1,15 @@
 import React, { useEffect, useRef } from "react";
-import empowermentImg1 from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/elegba image.jpeg";
-import empowermentImg2 from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/elegba image.jpeg";
-import youth from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/youthempowerment.jpeg";
-import children from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/children.png";
-import road from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/road.png";
-import roadII from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/roadII.png";
-import road111 from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/road111.png";
-import epm1 from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/epm1.png";
+import empowermentImg1 from "/projects/elegba image.jpeg";
+import empowermentImg2 from "/projects/elegba image.jpeg";
+import youth from "/projects/youthempowerment.jpeg";
+import children from "/projects/children.png";
+import road from "/projects/road.png";
+import roadII from "/projects/roadII.png";
+import road111 from "/projects/road111.png";
+import epm1 from "/projects/epm1.png";
 import { Navbar } from "./Navbar.jsx";
 import { ThemeToggle } from "./ThemeToggle.jsx";
 // import {StarBackground } from './StarBackground.jsx'
-
-// filepath: /Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/src/components/empowerment.jsx
 export function Empowerment() {
   const pageRef = useRef(null);
 

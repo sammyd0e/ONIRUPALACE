@@ -2,11 +2,11 @@
 
 
 import React, { useEffect, useRef } from "react";
-import elegbafeast from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/elegba image.jpeg";
-import youth from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/youthempowerment.jpeg"
-import ejiwaelegba from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/ejiwaelegba.png"
-import olokun from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/olokun.png"
-import seafood from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/seafood.png"
+import elegbafeast from "/projects/elegba image.jpeg";
+import youth from "/projects/youthempowerment.jpeg"
+import ejiwaelegba from "/projects/ejiwaelegba.png"
+import olokun from "/projects/olokun.png"
+import seafood from "/projects/seafood.png"
 
 
 const events = [

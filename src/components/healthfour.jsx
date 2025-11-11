@@ -1,6 +1,6 @@
 
 import  "../index.css";
-import doc from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/Doc.png"
+import doc from "/projects/Doc.png"
 export function Healthfour() {
   return(
 
