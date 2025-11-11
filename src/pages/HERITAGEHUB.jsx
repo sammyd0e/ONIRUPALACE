@@ -1,13 +1,13 @@
 import { Navbar } from "../components/Navbar";
-import market from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/001.jpeg"
-import book from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/books.jpeg"
-import bead from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/beads.jpeg"
-import sculpture from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/sculpturearts.jpg"
-import attires from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/attires.jpeg"
-import artcraft from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/artandcraft.jpeg"
-import musical from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/musicalinstruments.jpeg"
-import city from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/citynew.png"
-import ooni from "/Users/sammydoe/Downloads/beautiful-react-tailwind-portfolio-main/public/projects/ooni ojaja II.jpeg"
+import market from "/projects/001.jpeg"
+import book from "/projects/books.jpeg"
+import bead from "/projects/beads.jpeg"
+import sculpture from "/projects/sculpturearts.jpg"
+import attires from "/projects/attires.jpeg"
+import artcraft from "/projects/artandcraft.jpeg"
+import musical from "/projects/musicalinstruments.jpeg"
+import city from "/projects/citynew.png"
+import ooni from "/projects/ooni ojaja II.jpeg"
 
 export function HeritageHub() {
   return (
