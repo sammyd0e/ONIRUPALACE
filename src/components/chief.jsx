@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import basira from "/projects/BASIRA-TITILAYO-SMITH.jpg";
 import adeyemi from "/projects/ADEYEMI-IDOWU.jpg";
-import muyiwa from "/projects/MUYIWA GBADEGESIN.JPG";
+import muyiwa from "/projects/MUYIWA GBADEGESIN.jpg";
 import lukmon from "/projects/LUMON MUSTAPHA.jpg";
 import bolanle from "/projects/BOLANLEAUSTENPETERS.jpg";
 
