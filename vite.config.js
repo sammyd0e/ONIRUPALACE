@@ -11,6 +11,14 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  assetsInclude: ["**/*.JPG"],
-  base: process.env.VITE_BASE_PATH || '/'
+  assetsInclude: ["**/*.JPG", "**/*.jpeg", "**/*.jpg", "**/*.png"],
+  base: process.env.VITE_BASE_PATH || '/',
+  build: {
+    assetsDir: 'assets',
+    rollupOptions: {
+      output: {
+        assetFileNames: 'assets/[name].[hash][extname]'
+      }
+    }
+  }
 });
