@@ -518,98 +518,141 @@ export const AboutSection = () => {
 {/* the about  */}
         {showModal && (
           <div
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 animate-fade-in-delay-6"
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm animate-fade-in"
             onClick={() => setShowModal(false)}
           >
             <div
-              className="relative rounded-lg shadow-xl w-full max-w-xs sm:max-w-md md:max-w-lg mx-2 sm:mx-4 p-2 sm:p-4 md:p-8 overflow-y-auto max-h-[90vh] animate-fade-in-delay-1 backdrop-blur-2xl bg-white/120"
+              className="relative rounded-2xl shadow-2xl w-full max-w-2xl mx-2 sm:mx-4 max-h-[95vh] overflow-hidden animate-scale-in"
               onClick={e => e.stopPropagation()}
             >
-              <button
-                className="fixed top-4 right-4 z-50 text-primary hover:text-red-500 flex items-center justify-center"
-                onClick={() => setShowModal(false)}
-                aria-label="Close"
-              >
-                <X size={28} className="sm:size-8" />
-              </button>
-              <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-primary">Education</h3>
-              <p class='name' className="text-white font-medium mb-2 text-justify text-sm sm:text-base">
-                <span className="text-3xl sm:text-5xl">O</span>ba Abdulwasiu Omogbolahan Lawal was born on July 24, 1970, to Chief Taoreed Lawal-Akapo, former Ojora of Lagos (1977–1993), and Alhaja Muinat Olabisi Abeni Ajasa Lawal-Akapo of Abisogun Oniru. Driven by a passion for knowledge and leadership, he earned an M.Sc. in Violence, Conflict and Development from SOAS, University of London, and an Executive M.Sc. in Cities from the London School of Economics and Political Science (LSE).<br /><br />
-                Throughout his academic journey, Kabiyesi focused on understanding human conflict, development, and urban challenges. His research explored topics such as the drivers of the Niger-Delta conflict and the impact of travel costs on urban communities in Lagos. He has also completed numerous executive and certificate programs at renowned institutions, including the Wharton School, University of Cape Town, World Bank Institute, and Harvard University.<br /><br />
-                Kabiyesi’s lifelong commitment to learning and service has shaped his vision for leadership and community development in Iru Kingdom.
-              </p>
-              <img src={teenager} alt="kabiyesi graduating" className="w-full h-auto rounded-lg my-3 sm:my-4" />
-              <p className="text-white font-medium mb-2 text-justify text-sm sm:text-base">
-                <span className="text-3xl sm:text-5xl">H</span>is Majesty is a seasoned administrator with over 25 years post-graduate experience and in-depth knowledge of the workings of the Public Sector in Nigeria, having served as a three-time Honourable Commissioner in the Lagos State Government.
-                Kabiyesi started his public service career as a Scientific Officer with the Raw Materials Research and Development Council at the Federal Ministry of Science and Technology, Abuja in 1994. His Majesty later joined The Nigerian Police Force and was commissioned as a Cadet Assistant Superintendent.
-                Amongst several other duties while in service, Kabiyesi was Aide-De-Camp to Asiwaju Bola Ahmed Tinubu GCFR, who was then the Governor of Lagos State and now President and Commander-in-Chief of the Armed Forces of the Federal Republic. His Majesty voluntarily retired from the Nigerian Police in 2008 as a Superintendent of Police.
-                Subsequently, Oba Lawal was appointed as a Senior Special Assistant to the Governor Mr. Babatunde Raji Fashola, SAN on Special Projects. In this capacity, he coordinated the Agriculture-Based Youth Empowerment Scheme (Agric-YES). The success of the innovative Agric-YES paved the way for his appointment as the Honourable Commissioner for Agriculture and Cooperatives in Lagos State in 2011. During his time as the Honourable Commissioner, Ministry of Agriculture and Cooperatives (2011- 2015)
-              </p>
-              <p className="text-white font-medium mb-2 text-justify text-sm sm:text-base">
-                <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-primary">Service</h3>
-                <span className="text-2xl sm:text-3xl">H</span>e Initiated the following programmes and reforms:
-                <ul className="list-disc list-inside ml-4">
-                  <li>The School Agric Programme and the Agric-YES Summer School for Senior Secondary Schools</li>
-                  <li>The Eko Rice Mill, Imota</li>
-                  <li>The High Quality Cassava Factory, Araga</li>
-                  <li>The Annual Lagos Seafood Festival now Lagos Food Festival</li>
-                  <li>The Agric Value-chain Empowerment programme</li>
-                  <li>The Eko Farmers Mart</li>
-                  <li>Eko Live Animal Transport project - this put an end to walking animals from the animal market to the slaughter slab/abbatoir in Lagos</li>
-                  <li>Raised the State's food security profile by creating jobs and wealth directly and indirectly for over 250,000 people across the agricultural value chains for the benefit of Lagos State.</li>
-                  <li>Supervised and managed over 10,000 cooperative societies with a member strength of one million persons spread across public and private organizations with an asset base of over N60 billion.</li>
-                </ul>
-                His Majesty's impeccable public service record and ability to address urban challenges, led to another appointment as the Honourable Commissioner for Housing by Governor Akinwunmi Ambode, an office Oba Lawal served in from October 2015 till May 2019. During the period, a lot of programs and landmark projects were designed, implemented and achieved under his leadership as Honourable Commissioner such as:
-                Rent-to-own Home Ownership, Master craftsman program (an initiative for artisans and workmen in the built industry), Lagos Affordable Public Housing (LAPH), 4-in-14 days Bungalow Housing Development, as well as, promoted Transit-Oriented development (TOD).
-                On August, 20th 2019, Oba Lawal was again appointed as the Honourable Commissioner, Ministry of Agriculture and food systems, until he ascended the throne of his forebearers in June 2020. In that time, <br /> He was able to achieve the following:
-                <ul className="list-disc list-inside ml-4">
-                  <li>Developed the five-year Agricultural Roadmap for the State (2020-2025).</li>
-                  <li>Midwifed and superintended the State Government's food security and palliative efforts during the COVID-19 public health emergency. This effort benefitted about 1 million vulnerable households in Lagos. It became a model adopted by other states and the FCT</li>
-                  <li>Coordinated and to the admiration of all, the twin efforts of the Emergency Food Response and the Temporary Food Markets.</li>
-                  <li>In addition to being a member of the Lagos State Executive Council, His Majesty also served as a Board Member of the Lagos State Security Trust Fund for 8 years.</li>
-                </ul>
-              </p>
-              <p className="text-white font-medium mb-2 text-justify text-sm sm:text-base">
-                Oba Abdulwasiu Omogbolahan Lawal
-had a very impressive work history which in an evaluative sense. He started on Oct. 1992 to Sept. 1993, when he participated in the mandatory one-year NYSC at Federal Capital Development Authority, Abuja (NYSC). This was soon to be followed by his employment at the Raw Materials Research and Development Council, <br />
-<br /> <img src={ADC} alt="" />
-<br />
-Federal Ministry of Science and Technology from July 1994 to July 1996. He later enlisted in the Nigeria Police Force from August 1996 to April 1998, when he was commissioned as Assistant Superintendent of Police and by October 2008 he had retired as Superintendent of Police. His police assignment was an exposé to the people and societies of the Nigerian state as he moved around the country in the service of his duty to the nation. Oba Lawal's veridical of public office however started in June 1999 when he was Aide de Camp (ADC)/Escort Commander to the Covernor of Lagos State. He carried out his assignments with dispatch until 2007 when his designated goal of Chief Security Officer to the Governor came to an end with the completion of Asiwaju Bola Ahmed Tinibu's tenure as governor.He was later appointed Senior Special Assistant (Special Projects) to the succeeding Governor Fashola fromDecember 2008 through July 2011. Oba Lawal is a three-time Honorable Commissioner in Lagos, a seasoned security and development practitioner, with a deep grasp of political economy of development especially in low-and middle-income economies. He served as Commissioner for Agriculture & Cooperatives from July 2011 - May 2015, Commissioner for Housing from October 2015 to May 2019, and Commissioner for Agriculture, August 2019 till June 4, 2020. Oba Abdul-Wasiu Omogbolahan Lawal became the 15th Oniru on June 7, 2020.
-<br /> <br /><img src={ADCII} alt="" />
-              </p>
-              <p className="text-white font-medium mb-2 text-justify text-sm sm:text-base">
-                <br /><span className="text-2xl">T</span>he Iru kingdom may be about to witness one of the most unprecedented developments directly under a monarch.
-                Many theories of development have attirmed that development thrives on ideas but more important is the tact that ideas are not self-applying, individuals will have to drive them. To be able to do this, such individuals the drivers of development) must first be refined and possess key indicators that they also have internalized the process at personal level.
-                For a monarch of Oba Lawa's pedigree, a personal limit has been set for what can be said to be acceptable standard and value for human development. The Oba attended conferences and workshops to put him in his stead to bring more development to Iru Kingdom. <br />
-                Some of such trainings included but not limited to the following: 
-                <ul className="list-disc list-inside ml-4">
-                  <li>Lagos State Security Summit (April 2018)</li>
-                  <li>Workshop on Building an End-to-End Ecosystem for Affordable Housing, Lagos (2017)</li>
-                  <li>Nigeria Real Estate Summit and Expo 2017</li>
-                  <li>West Africa Property Investment Summit, Lagos (Nov. 2017)</li>
-                  <li>Real Estate Investment Seminar (REIT), Lagos (2017)</li>
-                  <li>Young Achievers Summit, 2017</li>
-                  <li>Workshop for Judicial Officers on the Nigeria Housing Finance Program (Sept 2017)</li>
-                  <li>African Property Investment Summit, Johannesburg, South Africa (August 2017)</li>
-                  <li>African Union Housing Finance (AUHF) Conference, Abuja (Sept. 2016)</li>
-                  <li>Institute of Directors Conference, Lagos (July 2016)</li> <li>7th Global Housing Finance Conference, World Bank Institute, Washington DC, USA (May 2016)</li>
-                  <li>Resource Person at World Bank Learning Forum for Niger Delta States: Abuja, Nigeria (December 2009)</li>
-                  <li>World Bank Learning Forum on Social Protection Responses to the Three Waves of Crisis viz Finance, Food & Fuel: Cairo, Egypt (June 2009)</li> <br /> Oba Abdulwasiu Omogbolahan Lawal had a very impressive work history, which, in an evaluative sense, began on Oct. 1992 to Sept. 1993, when he participated in the mandatory one-year NYSC at the Federal Capital Development Authority, Abuja (NYSC). This was soon to be followed by his employment at the Raw Materials Research and Development Council.
-                  <p>He served at the <strong>Federal Ministry of Science and Technology</strong> from July 1994 to July 1996. He later enlisted in the <strong>Nigeria Police Force</strong> from August 1996 to April 1998, when he was commissioned as Assistant Superintendent of Police. By October 2008, he had retired as Superintendent of Police. His police assignment provided exposure to the people and societies of the Nigerian state as he moved around the country in the service of his duty to the nation.</p><p>Oba Lawal's veridical journey in public office began in June 1999 when he was appointed <strong>Aide-de-Camp (ADC)/Escort Commander</strong> to the Governor of Lagos State. He carried out his assignments with dispatch until 2007, when his designated goal of Chief Security Officer to the Governor came to an end with the completion of Asiwaju Bola Ahmed Tinubu's tenure as governor.</p>
+              {/* Header with gradient background */}
+              <div className="bg-gradient-to-r from-primary via-purple-500 to-primary p-8 text-white relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full blur-3xl"></div>
+                <button
+                  className="absolute top-6 right-6 z-50 text-white hover:text-red-300 transition-colors"
+                  onClick={() => setShowModal(false)}
+                  aria-label="Close"
+                >
+                  <X size={32} />
+                </button>
+                <h2 className="text-4xl font-bold mb-2 relative z-10">Full Biography</h2>
+                <p className="text-white/90 text-lg relative z-10">Oba Abdulwasiu Omogbolahan Lawal - 15th Oniru of Iruland</p>
+              </div>
 
-<p>He was later appointed <strong>Senior Special Assistant (Special Projects)</strong> to the succeeding Governor, Fashola, from December 2008 through July 2011.</p>
+              {/* Scrollable Content */}
+              <div className="overflow-y-auto max-h-[calc(95vh-200px)] bg-white/95 backdrop-blur-lg p-8 space-y-8">
+                <div className="space-y-4">
+                  <h3 className="text-2xl font-bold text-foreground flex items-center gap-3">
+                    <div className="w-1 h-8 bg-primary rounded-full"></div>
+                    Early Life & Education
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed text-lg">
+                    <span className="text-4xl font-bold text-primary">O</span>ba Abdulwasiu Omogbolahan Lawal was born on <strong>July 24, 1970</strong>, to Chief Taoreed Lawal-Akapo (former Ojora of Lagos, 1977–1993) and Alhaja Muinat Olabisi Abeni Ajasa Lawal-Akapo of Abisogun Oniru. Driven by an exceptional passion for knowledge and strategic leadership, he pursued advanced academic studies at world-renowned institutions.
+                  </p>
+                  <div className="bg-primary/10 border-l-4 border-primary p-4 rounded-r-lg">
+                    <p className="text-foreground font-semibold mb-2">Academic Credentials:</p>
+                    <ul className="space-y-1 text-muted-foreground">
+                      <li>✓ M.Sc. in Violence, Conflict and Development from SOAS, University of London</li>
+                      <li>✓ Executive M.Sc. in Cities from London School of Economics and Political Science (LSE)</li>
+                      <li>✓ Executive programs from Wharton School, University of Cape Town, World Bank Institute, and Harvard University</li>
+                    </ul>
+                  </div>
+                  <img src={teenager} alt="Kabiyesi graduating" className="w-full rounded-xl shadow-lg mt-4" />
+                </div>
 
-<p>Oba Lawal is a <strong>three-time Honorable Commissioner</strong> in Lagos, a seasoned security and development practitioner with a deep grasp of the political economy of development, especially in low- and middle-income economies. He served as:</p>
+                {/* Public Service */}
+                <div className="space-y-4">
+                  <h3 className="text-2xl font-bold text-foreground flex items-center gap-3">
+                    <div className="w-1 h-8 bg-primary rounded-full"></div>
+                    Public Service Career
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed text-lg">
+                    <span className="text-4xl font-bold text-primary">A</span> seasoned administrator with over 25 years of post-graduate experience, His Majesty brings exceptional expertise in public sector management and urban development. His career trajectory showcases unwavering commitment to service and excellence.
+                  </p>
+                  
+                  <div className="space-y-4">
+                    <div className="bg-gradient-to-r from-primary/10 to-purple-500/10 p-4 rounded-lg border-l-4 border-primary">
+                      <p className="font-bold text-foreground">1994-1996: Raw Materials Research & Development Council</p>
+                      <p className="text-muted-foreground text-sm">Scientific Officer at Federal Ministry of Science and Technology, Abuja</p>
+                    </div>
+                    <div className="bg-gradient-to-r from-primary/10 to-purple-500/10 p-4 rounded-lg border-l-4 border-primary">
+                      <p className="font-bold text-foreground">1996-2008: Nigerian Police Force</p>
+                      <p className="text-muted-foreground text-sm">Commissioned as Cadet Assistant Superintendent, retired as Superintendent of Police</p>
+                    </div>
+                    <div className="bg-gradient-to-r from-primary/10 to-purple-500/10 p-4 rounded-lg border-l-4 border-primary">
+                      <p className="font-bold text-foreground">1999-2007: Aide-de-Camp to Governor Tinubu</p>
+                      <p className="text-muted-foreground text-sm">Chief Security Officer to the Governor of Lagos State</p>
+                    </div>
+                  </div>
+                </div>
 
-<ul>
-  <li><strong>Commissioner for Agriculture & Cooperatives</strong> from July 2011 to May 2015</li>
-  <li><strong>Commissioner for Housing</strong> from October 2015 to May 2019</li>
-  <li><strong>Commissioner for Agriculture</strong> from August 2019 to June 4, 2020</li>
-</ul>
+                {/* Commissioners Achievements */}
+                <div className="space-y-4">
+                  <h3 className="text-2xl font-bold text-foreground flex items-center gap-3">
+                    <div className="w-1 h-8 bg-primary rounded-full"></div>
+                    Key Achievements as Commissioner
+                  </h3>
+                  
+                  <div className="space-y-4">
+                    {/* Agriculture Commissioner */}
+                    <div className="bg-gradient-to-br from-primary/5 to-purple-500/5 p-5 rounded-xl border border-primary/20">
+                      <p className="font-bold text-primary text-lg mb-3">Commissioner for Agriculture & Cooperatives (2011-2015)</p>
+                      <ul className="space-y-2 text-muted-foreground">
+                        <li>✓ Established The Eko Rice Mill, Imota - landmark agricultural infrastructure</li>
+                        <li>✓ Launched School Agric Programme and Agric-YES Summer School</li>
+                        <li>✓ Created Eko Farmers Mart and expanded cooperative societies (10,000+ societies)</li>
+                        <li>✓ Generated direct employment for 250,000+ people in agricultural value chains</li>
+                      </ul>
+                    </div>
 
-<p><strong>Oba Abdul-Wasiu Omogbolahan Lawal</strong> became the <strong>15th Oniru of Iruland</strong> on June 7, 2020.  <img src={shetima} alt="" /></p>
-                </ul>
-              </p>
+                    {/* Housing Commissioner */}
+                    <div className="bg-gradient-to-br from-primary/5 to-purple-500/5 p-5 rounded-xl border border-primary/20">
+                      <p className="font-bold text-primary text-lg mb-3">Commissioner for Housing (2015-2019)</p>
+                      <ul className="space-y-2 text-muted-foreground">
+                        <li>✓ Pioneered Rent-to-Own Home Ownership programme</li>
+                        <li>✓ Established Lagos Affordable Public Housing (LAPH)</li>
+                        <li>✓ Promoted Transit-Oriented Development (TOD) initiatives</li>
+                        <li>✓ Created Master Craftsman Programme for artisans and builders</li>
+                      </ul>
+                    </div>
+
+                    {/* Agriculture & Food Systems */}
+                    <div className="bg-gradient-to-br from-primary/5 to-purple-500/5 p-5 rounded-xl border border-primary/20">
+                      <p className="font-bold text-primary text-lg mb-3">Commissioner for Agriculture & Food Systems (2019-2020)</p>
+                      <ul className="space-y-2 text-muted-foreground">
+                        <li>✓ Developed Five-Year Agricultural Roadmap for Lagos State</li>
+                        <li>✓ Led food security initiatives benefiting 1 million households during COVID-19</li>
+                        <li>✓ Established Emergency Food Response and Temporary Food Markets</li>
+                        <li>✓ Model adopted by other states and the FCT</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Leadership Training */}
+                <div className="space-y-4">
+                  <h3 className="text-2xl font-bold text-foreground flex items-center gap-3">
+                    <div className="w-1 h-8 bg-primary rounded-full"></div>
+                    Professional Development
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    His commitment to excellence extends to continuous professional development through participation in global forums and conferences on development, governance, and urban planning.
+                  </p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    <div className="text-sm text-muted-foreground bg-white/50 p-3 rounded-lg">📍 World Bank Institute, Washington DC (2016)</div>
+                    <div className="text-sm text-muted-foreground bg-white/50 p-3 rounded-lg">📍 African Property Investment Summit, Johannesburg (2017)</div>
+                    <div className="text-sm text-muted-foreground bg-white/50 p-3 rounded-lg">📍 Harvard University Leadership Programs</div>
+                    <div className="text-sm text-muted-foreground bg-white/50 p-3 rounded-lg">📍 Institute of Directors Conference, Lagos</div>
+                  </div>
+                </div>
+
+                {/* Enthronement */}
+                <div className="bg-gradient-to-r from-primary/20 via-purple-500/20 to-primary/20 p-6 rounded-xl border-2 border-primary/30 text-center">
+                  <p className="text-muted-foreground mb-2">Oba Abdul-Wasiu Omogbolahan Lawal</p>
+                  <p className="text-2xl font-bold text-primary">15th Oniru of Iruland</p>
+                  <p className="text-muted-foreground mt-2">Enthroned on June 7, 2020</p>
+                </div>
+              </div>
             </div>
           </div>
         )}
@@ -617,3 +660,5 @@ Federal Ministry of Science and Technology from July 1994 to July 1996. He later
     </>
   );
 };
+
+export default AboutSection;
