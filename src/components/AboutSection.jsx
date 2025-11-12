@@ -222,43 +222,74 @@ export const AboutSection = () => {
 
   return (
     <>
-      <section id="about" className="py-24 px-4 relative">
-        <div className="container mx-auto max-w-5xl">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-            About <span className="text-primary"> Kabiyesi</span>
-          </h2>
+      <section id="about" className="py-20 px-4 relative overflow-hidden">
+        {/* Background gradient accent */}
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary/5 rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-primary/5 rounded-full blur-3xl"></div>
+        
+        <div className="container mx-auto max-w-6xl relative z-10">
+          {/* Section Header */}
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              About <span className="bg-gradient-to-r from-primary via-purple-500 to-primary bg-clip-text text-transparent"> Kabiyesi</span>
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Discover the vision and leadership of Oba Abdulwasiu Omogbolahan Lawal
+            </p>
+          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <h3 className="text-2xl font-semibold text-primary">
-                Kabiyesi Alaiyeluwa of Iru Kingdom
-              </h3>
+          {/* Main Content Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+            {/* Left: Text Content */}
+            <div className="space-y-6 animate-slide-in-left">
+              <div className="space-y-3">
+                <h3 className="text-3xl font-bold text-foreground">
+                  Oba Abdulwasiu Omogbolahan Lawal
+                </h3>
+                <p className="text-lg font-semibold text-primary">
+                  15th Oniru of Iruland
+                </p>
+              </div>
 
-              <p class='name' className="text-muted-foreground">
-                Oba Abdulwasiu Omogbolahan Lawal (Abisogun II) is the 15th Oniru of Iruland. Born on July 24, 1970, to Chief Taoreed Lawal-Akapo and Alhaja Muinat Olabisi Abeni Ajasa Lawal-Akapo, he was enthroned on June 7, 2020, after serving as Commissioner for Agriculture in Lagos State. 
-              </p>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p className="text-base md:text-lg">
+                  Born on <span className="font-semibold text-foreground">July 24, 1970</span>, to Chief Taoreed Lawal-Akapo and Alhaja Muinat Olabisi Abeni Ajasa Lawal-Akapo, His Majesty was enthroned as the 15th Oniru of Iruland on <span className="font-semibold text-foreground">June 7, 2020</span>.
+                </p>
 
-              <p class='name'className="text-muted-foreground">
-                He holds degrees from the University of Port Harcourt and the University of London, and has attended various prestigious programs, including Harvard University and the Wharton School. <span className="text-glow text-foreground"> </span>
-              </p>
+                <p className="text-base md:text-lg">
+                  A seasoned administrator with over 25 years of post-graduate experience, Kabiyesi brings exceptional knowledge of the public sector, having served as a three-time Honourable Commissioner in the Lagos State Government.
+                </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-                <button className="cosmic-button" onClick={() => setShowModal(true)}>
-                  Read More
+                <p className="text-base md:text-lg">
+                  His academic excellence is evident through his Master's degrees from SOAS, University of London, and the London School of Economics and Political Science (LSE), specializing in Violence, Conflict, and Development and Cities respectively.
+                </p>
+              </div>
+
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <button className="cosmic-button px-8 py-3 font-semibold" onClick={() => setShowModal(true)}>
+                  Read Full Biography
                 </button>
 
                 <button
                   onClick={() => setActiveTab(true)}
-              
-                className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
+                  className="px-8 py-3 rounded-full border-2 border-primary text-primary hover:bg-primary/10 transition-all duration-300 font-semibold"
                 >
-                  History of Iru Land 
+                  Kingdom History
                 </button>
               </div>
             </div>
 
-            <div>
-              <img src={imgP} alt="kabiyesi" className="border-r"/>
+            {/* Right: Image */}
+            <div className="animate-fade-in-delay-2">
+              <div className="relative group">
+                <div className="absolute -inset-2 bg-gradient-to-r from-primary via-purple-500 to-primary rounded-2xl blur-xl opacity-25 group-hover:opacity-50 transition duration-500"></div>
+                <img 
+                  src={imgP} 
+                  alt="Kabiyesi Oba Abdulwasiu Omogbolahan Lawal"
+                  className="relative w-full rounded-2xl shadow-2xl object-cover h-96 md:h-[500px]"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -484,7 +515,7 @@ export const AboutSection = () => {
         }
         
 
-
+{/* the about  */}
         {showModal && (
           <div
             className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 animate-fade-in-delay-6"
