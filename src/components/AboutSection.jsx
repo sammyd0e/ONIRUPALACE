@@ -393,6 +393,24 @@ export const AboutSection = () => {
                   </div>
                 </div>
 
+                {/* Past Onirus (compact timeline) */}
+                <div className="space-y-4">
+                  <h4 className="text-xl font-bold text-foreground">Past Onirus</h4>
+                  <p className="text-muted-foreground">A compact timeline of previous Onirus (names and approximate reigns).</p>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+                    {slides.map((s, idx) => (
+                      <div key={idx} className="p-3 rounded-lg bg-white border shadow-sm flex items-center gap-3">
+                        <img src={s.image} alt={s.h1} className="w-12 h-12 rounded-full object-cover" />
+                        <div>
+                          <p className="font-semibold text-sm">{s.h1}</p>
+                          <p className="text-xs text-muted-foreground">{s.h3}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
                 {/* Places before & now - keep existing two cards but make markup consistent */}
                 <div className="space-y-4">
                   <h4 className="text-xl font-bold text-foreground">Prominent Places — Before & Now</h4>
