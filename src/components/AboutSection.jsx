@@ -295,224 +295,150 @@ export const AboutSection = () => {
         </div>
 
         {activeTab && (
-          <div className="absolute top-0 left-0 w-full h-full bg-black/70 flex items-center justify-center z-50" onClick={() => setActiveTab(false)}>
-            <div className=
-              "relative rounded-lg shadow-xl w-full max-w-xs sm:max-w-md md:max-w-lg mx-2 sm:mx-4 p-2 sm:p-4 md:p-8 overflow-y-auto max-h-[90vh] animate-fade-in-delay-1 backdrop-blur-2xl bg-white/120"
-              onClick={e => e.stopPropagation()}
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm"
+            onClick={() => setActiveTab(false)}
+          >
+            <div
+              className="relative rounded-2xl shadow-2xl w-full max-w-4xl mx-4 max-h-[92vh] overflow-hidden animate-scale-in"
+              onClick={(e) => e.stopPropagation()}
             >
-                  
-              <button
-                className="absolute top-4 right-4 text-primary hover:text-red-500"
-                onClick={() => setActiveTab(false)}
-                aria-label="Close"
-              >
-                <X size={24} />
-              </button>
-              <h3 className="text-xl font-bold mb-4 text-primary">History of Iru Land</h3>
-              <p className=" text-white font-medium mb-2 text-justify text-sm sm:text-base">
-                <span className="text-2xl">I</span>ru Kingdom, located in Lagos State, Nigeria, has a rich history dating back several centuries. It is one of the traditional Yoruba kingdoms and has played a significant role in the cultural and political landscape of the region. The kingdom is known for its vibrant culture, traditional festivals, and historical landmarks. Over the years, Iru Kingdom has evolved while preserving its heritage, making it a unique blend of tradition and modernity.
-              </p>
-               <div className="relative w-full h-72 md:h-96 overflow-hidden">
-    <img 
-      src="https://images.unsplash.com/photo-1577086664690-5acb0a48bf3d?auto=format&fit=crop&w=1600&q=80" 
-      alt="Lagos waterfront traditional heritage" 
-      class="absolute inset-0 w-full h-full object-cover brightness-75"
-    />
-    <div class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/70"></div>
-    <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 fade-in">
-      <h1 class="text-3xl md:text-5xl font-bold mb-3 tracking-wide">
-        The Transformation of Idejo & Oniru
-      </h1>
-      <p class="text-lg md:text-xl italic opacity-90">A reflection on Lagos' evolving traditional heritage since the 1990s</p>
-    </div>
-  </div>
-    <div class="space-y-6">
-      <p className="text-white">
-        There are two leading traditional issues trailing the <span class="font-semibold text-[#0d3b66]">Idejo chiefs of Lagos</span>, namely:
-        how many are they, and how many have successfully transmuted to traditional suzerain with political power over a kingdom?
-        The first question has seen very political and judicial responses about social relationships involving people, authority, and power.
-      </p>
+              {/* Header */}
+              <div className="bg-gradient-to-r from-primary via-purple-500 to-primary p-6 text-white relative">
+                <div className="absolute top-0 right-0 w-36 h-36 bg-white/8 rounded-full blur-2xl"></div>
+                <button
+                  className="absolute top-4 right-4 text-white hover:text-red-300"
+                  onClick={() => setActiveTab(false)}
+                  aria-label="Close history"
+                >
+                  <X size={26} />
+                </button>
+                <h2 className="text-3xl md:text-4xl font-bold">Kingdom History</h2>
+                <p className="text-white/90 mt-1">A concise history and evolution of Iru Kingdom — culture, chiefs, and places.</p>
+              </div>
 
-      <p className="text-white">
-        Depending on the objective, the number of the Idejo chiefs have been given variously as <span class="italic">11, 16, and even 32</span>.
-        However, the number that is relatively free from distortions and political or personal insertion is <span class="font-semibold">11</span>.
-        Thus, the Idejo chiefs are historically believed to be the direct sons of <span class="font-semibold">Olofin Iddo</span>, who moved in the throes of migrations
-        from Iddo to their present kingdoms or chiefdoms, depending on their current traditional political statuses.
-      </p>
+              {/* Scrollable body */}
+              <div className="overflow-y-auto max-h-[calc(92vh-140px)] bg-white/95 p-6 space-y-6">
+                {/* Hero */}
+                <div className="relative w-full h-60 md:h-80 rounded-xl overflow-hidden shadow-lg">
+                  <img
+                    src="https://images.unsplash.com/photo-1577086664690-5acb0a48bf3d?auto=format&fit=crop&w=1600&q=80"
+                    alt="Iru heritage"
+                    className="absolute inset-0 w-full h-full object-cover brightness-75"
+                  />
+                  <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                    <div className="text-center text-white px-4">
+                      <h3 className="text-2xl md:text-3xl font-bold">The Transformation of Idejo & Oniru</h3>
+                      <p className="mt-1 text-sm md:text-base italic opacity-90">Tracing migrations, influence and cultural continuity</p>
+                    </div>
+                  </div>
+                </div>
 
-      <p className="text-white">
-        The Idejos, eleven in number, have enjoyed substantial acceptance with near practicable measure of refutation.
-        Various judicial panels and boards of enquiry have affirmed this position, and this has been registered in folklores and social music—
-        most popular of which was serenaded by <span class="font-semibold">Lefty Salami</span> titled
-        <em class="text-primary">"Oloye Mokanla."</em>
-      </p>
+                {/* Summary */}
+                <div className="grid md:grid-cols-3 gap-4">
+                  <div className="md:col-span-2">
+                    <p className="text-muted-foreground leading-relaxed">
+                      <span className="text-2xl font-bold text-primary">I</span>ru Kingdom, located on what is now Victoria Island and surrounding areas, is one of the oldest Awori settlements in the Eti-Osa region. Its history is shaped by migrations, maritime trade, and interaction with Benin and other Lagos peoples — the Awori, Mahin and Idejo — producing a layered cultural identity.
+                    </p>
+                  </div>
+                  <div className="bg-primary/10 rounded-lg p-4">
+                    <p className="font-semibold text-foreground">Quick Facts</p>
+                    <ul className="text-sm text-muted-foreground mt-2 space-y-1">
+                      <li>• Early settlement: 16th century (approx.)</li>
+                      <li>• Key peoples: Awori, Mahin, Idejo</li>
+                      <li>• Important: Fishing, trade, chieftaincy</li>
+                    </ul>
+                  </div>
+                </div>
 
-      <h2 class="text-xl font-bold text-primary mt-10 border-l-4 border-primary pl-3">
-        The Eleven Idejo Chiefs
-      </h2>
-      <p className="text-white">
-        The eleven Idejo chiefs are:
-        <span class="font-medium">Aromire, Olumegbon, Onikoyi, Onitano, Ojora, Oluwa, Onisowo, Onitolo, Oloto, Oniru,</span>
-        and <span class="font-medium">Elegushi</span>.
-      </p>
+                {/* Timeline */}
+                <div className="space-y-4">
+                  <h4 className="text-xl font-bold text-foreground">Timeline</h4>
+                  <div className="space-y-3">
+                    <div className="p-4 rounded-lg border-l-4 border-primary bg-white">
+                      <p className="font-semibold">16th century</p>
+                      <p className="text-sm text-muted-foreground">Initial Awori and Idejo settlements; coastal communities oriented around fishing and trade.</p>
+                    </div>
+                    <div className="p-4 rounded-lg border-l-4 border-primary bg-white">
+                      <p className="font-semibold">Late 18th century</p>
+                      <p className="text-sm text-muted-foreground">Benin influence and the consolidation of Lagos kingship; integration of local chiefs.</p>
+                    </div>
+                    <div className="p-4 rounded-lg border-l-4 border-primary bg-white">
+                      <p className="font-semibold">19th - 20th centuries</p>
+                      <p className="text-sm text-muted-foreground">Trade, colonial contact and urban growth reshape settlements and economy.</p>
+                    </div>
+                    <div className="p-4 rounded-lg border-l-4 border-primary bg-white">
+                      <p className="font-semibold">1990s - Present</p>
+                      <p className="text-sm text-muted-foreground">Modern transformation: infrastructural development, cultural preservation and new leadership roles.</p>
+                    </div>
+                  </div>
+                </div>
 
-      <h2 class="text-xl font-bold text-primary mt-10 border-l-4 border-primary pl-3">
-        Further Transformations
-      </h2>
-      <p className="text-white">
-        The other issue is that of change in the traditional stead of Idejo title holders,
-        reflecting ongoing evolution within Lagos’ socio-political and cultural landscape.
-      </p>
+                {/* Idejo chiefs */}
+                <div className="space-y-4">
+                  <h4 className="text-xl font-bold text-foreground">The Eleven Idejo Chiefs</h4>
+                  <p className="text-muted-foreground">Historically recognised Idejo titles include (commonly listed):</p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+                    <div className="p-3 rounded-lg bg-white border shadow-sm">Aromire</div>
+                    <div className="p-3 rounded-lg bg-white border shadow-sm">Olumegbon</div>
+                    <div className="p-3 rounded-lg bg-white border shadow-sm">Onikoyi</div>
+                    <div className="p-3 rounded-lg bg-white border shadow-sm">Onitano</div>
+                    <div className="p-3 rounded-lg bg-white border shadow-sm">Ojora</div>
+                    <div className="p-3 rounded-lg bg-white border shadow-sm">Oluwa</div>
+                    <div className="p-3 rounded-lg bg-white border shadow-sm">Onisowo</div>
+                    <div className="p-3 rounded-lg bg-white border shadow-sm">Onitolo</div>
+                    <div className="p-3 rounded-lg bg-white border shadow-sm">Oloto</div>
+                    <div className="p-3 rounded-lg bg-white border shadow-sm">Oniru</div>
+                    <div className="p-3 rounded-lg bg-white border shadow-sm">Elegushi</div>
+                  </div>
+                </div>
 
-     <div>
-      <h1 className="text-primary text-2xl font-bold mt-10  border-primary pl-3">ONIRU'S EVALUATION </h1>
-       <div className="flex flex-col items-center justify-center w-full py-8">
-  <div className="relative w-full max-w-4xl h-[400px] bg-black rounded-lg shadow-lg overflow-hidden">
-  <img src={slide.image} alt={slide.h3} className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-text-primary bg-opacity-40 flex flex-col justify-end p-6 py-100">
-          <h3 className="text-xlg font-semibold text-purple-900 mb-1">{slide.h3}</h3>
-          <h1 className="text-2xl md:text-3xl font-bold text-black mb-2">{slide.h1}</h1>
-          
-          <p className="text-purple-700 mb-4 text-2xl">{slide.p}</p>
-          <div className="flex space-x-4 mb-2">
-            {slide.socials.map((s, i) => (
-              <a key={i} href={s.href} target="_blank" rel="noopener noreferrer" className="text-black text-xl hover:text-purple-300">
-                <i className={s.icon}></i>
-              </a>
-            ))}
-          </div>
-        </div>
-        {/* Navigation Buttons */}
-  <button onClick={prev} className="absolute left-2 top-1/2 -translate-y-1/2 bg-purple-500 bg-opacity-70 rounded-full p-2 hover:bg-opacity-100 transition">
-          <span className="sr-only">Previous</span>
-          &#8592;
-        </button>
-        <button onClick={next} className="absolute right-2 top-1/2 -translate-y-1/2 bg-purple-500 bg-opacity-70 rounded-full p-2 hover:bg-opacity-100 transition">
-          <span className="sr-only">Next</span>
-          &#8594;
-        </button>
-        {/* Dots */}
-        <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex space-x-2">
-          {slides.map((_, idx) => (
-            <button
-              key={idx}
-              onClick={() => goTo(idx)}
-              className={`w-3 h-3 rounded-full ${current === idx ? 'bg-white' : 'bg-purple-400'} border-2 border-white`}
-              aria-label={`Go to slide ${idx + 1}`}
-            ></button>
-          ))}
-        </div>
-      </div>
-    </div> 
-     </div>
-     <div id="mafo" className="mt-12">
-      <div className=" rounded-xl shadow-2xl p-6 md:p-10 animate-fade-in-delay-2 border border-primary/40 relative overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none z-0">
-          <div className="w-full h-full bg-[radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.08)_0%,transparent_70%)]"></div>
-        </div>
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 animate-slide-in-up">Early Settlements and the Iru Kingdom</h2>
-        <p className="text-lg text-white/90 mb-4 animate-fade-in">
-          The Iru Kingdom is identified as one of the earliest settlements in the Eti-Osa area of Lagos.
-        </p>
-        <ul className="list-disc list-inside text-white/80 mb-6 space-y-2 animate-fade-in-delay-1">
-          <li>
-            <span className="font-semibold text-primary">Location:</span> Primarily located on modern-day Victoria Island, the epicenter of Iru's traditional government. Bounded in the south by the Atlantic and in the north by the Five Cowries Creek estuary, sharing a boundary with Onisiwo at Itomaro.
-          </li>
-          <li>
-            <span className="font-semibold text-primary">The Oniru Chieftaincy:</span> The initial Awori settlers established suzerainty over about 18 villages, each under a chief and assistant.
-          </li>
-          <li>
-            <span className="font-semibold text-primary">Antiquity of Iru:</span> Iru, as one of the Idejo settlements, is believed to predate Benin's influence over Lagos.
-          </li>
-          <li>
-            <span className="font-semibold text-primary">Apese's Seafaring:</span> Chief Apese's people were renowned for seafaring and fishing, influencing their settlement choice.
-          </li>
-        </ul>
-        <h3 className="text-2xl font-bold text-primary mb-4 animate-slide-in-up">The Mahin People and Their Migration</h3>
-        <p className="text-white/90 mb-4 animate-fade-in">
-          The Mahin people, originating from ancient Lagos Kingdom in present-day Ondo State (and Benin Republic), were expert fishermen. Their migration to Lagos was driven by rich fishing opportunities, leading to settlements in Lagos Island (Apese, Onisiwo), Mainland (Ebute-Metta, Iwaya, Otto, Iddo, Ijora, Ojo), Lekki, Epe, Ikorodu, Amuwo-Odofin, and the Western District.
-        </p>
-        <p className="text-white/80 mb-4 animate-fade-in-delay-1">
-          Early Mahin settlements became trading depots, fostering cultural exchange and integration with Awori and Benin elements.
-        </p>
-        <h3 className="text-2xl font-bold text-primary mb-4 animate-slide-in-up">The Conquest of Lagos and the Role of Benin</h3>
-        <p className="text-white/90 mb-4 animate-fade-in">
-          In the late sixteenth century, Benin forces conquered Lagos, establishing kingship and incorporating original settlers. Chiefs like Gbaogun of Iddo and the Oba of Benin's daughter (Olu of Lagos) played key roles.
-        </p>
-        <p className="text-white/80 mb-4 animate-fade-in-delay-1">
-          King Akinsemoyin (circa 1760) attracted Igbos to Lagos, with the nucleus of Lagos Island and Eko founded by Igbos and later ruled by Benin chiefs. The Oniru was both a chief under Lagos and referred to as Oba Mahin.
-        </p>
-        <h3 className="text-2xl font-bold text-primary mb-4 animate-slide-in-up">Conflicting Perspectives on Lagos History</h3>
-        <p className="text-white/90 mb-4 animate-fade-in">
-          Awori chiefs acknowledged Benin suzerainty but maintained local control. The Mahin, supporting both Awori and Benin, became second-class chiefs after the conquest. Some views suggest Mahin influence was economic and military, shaping Lagos through constant interaction and warfare.
-        </p>
-        <div className="mt-6 flex flex-col md:flex-row gap-6 items-center animate-fade-in-delay-2">
-          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Iru Kingdom" className="rounded-lg shadow-lg w-full md:w-1/2 object-cover border-4 border-primary/30 animate-zoom-in" />
-          <div className="flex-1">
-            <p className="text-white/80 text-base md:text-lg">
-              This complex history highlights the multifaceted origins and influences—Awori, Benin, and Mahin—that contributed to the emergence of modern-day Lagos.
-            </p>
-          </div>
-         
-        </div>
-        <div className="absolute -top-10 -right-10 w-32 h-32 bg-gradient-to-tr from-primary via-purple-500 to-transparent rounded-full blur-2xl opacity-40 animate-pulse"></div>
-      </div>
-    </div>
-    <div className="mt-10">
-  <h2 className="text-2xl md:text-3xl font-extrabold text-white mb-6 text-center">
-    <span className="text-primary">Prominent Places in Iru LGA</span> <span className="text-purple-400">Before & Now</span>
-  </h2>
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-    <div className="group relative rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-black/70 via-primary/30 to-purple-900/40 backdrop-blur-lg border border-primary/30 p-4 transition-all duration-500 hover:scale-105">
-      <div className="flex gap-4">
-        <div className="flex-1">
-          <img src={ikoyiold} alt="Iru Before" className="rounded-xl w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
-          <p className="mt-2 text-white/80 text-center font-semibold">Before</p>
-        </div>
-        <div className="flex-1">
-          <img src={ikoyinew} alt="Iru Now" className="rounded-xl w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
-          <p className="mt-2 text-primary text-center font-semibold">Now</p>
-        </div>
-      </div>
-      <div class="nameee"className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/70 px-4 py-2 rounded-full text-white text-sm font-bold shadow-lg backdrop-blur-md">
-        Ikoyi Club, Ikoyi
-      </div>
-      <div className="absolute top-0 left-0 w-full h-full pointer-events-none z-0">
-        <div className="w-full h-full bg-[radial-gradient(circle_at_80%_20%,rgba(255,255,255,0.08)_0%,transparent_70%)]"></div>
-      </div>
-    </div>
-    <div className="group relative rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-black/70 via-primary/30 to-purple-900/40 backdrop-blur-lg border border-primary/30 p-4 transition-all duration-500 hover:scale-105">
-      <div className="flex gap-4">
-        <div className="flex-1">
-          <img src={old}alt="Market Before" className="rounded-xl w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
-          <p className="mt-2 text-white/80 text-center font-semibold">Before</p>
-        </div>
-        <div className="flex-1">
-          <img src={neww} alt="Market Now" className="rounded-xl w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
-          <p className="mt-2 text-primary text-center font-semibold">Now</p>
-        </div>
-      </div>
-      <div  class ="nameee" className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/70 px-4 py-2 rounded-full text-white text-sm font-bold shadow-lg backdrop-blur-md">
-        Bridge market, Victoria Island
-      </div>
-      <div className="absolute top-0 left-0 w-full h-full pointer-events-none z-0">
-        <div className="w-full h-full bg-[radial-gradient(circle_at_80%_20%,rgba(255,255,255,0.08)_0%,transparent_70%)]"></div>
-      </div>
-    </div>
-  </div>
-</div>
-  
- 
-   
-  
+                {/* Places before & now - keep existing two cards but make markup consistent */}
+                <div className="space-y-4">
+                  <h4 className="text-xl font-bold text-foreground">Prominent Places — Before & Now</h4>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="group relative rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-black/70 via-primary/30 to-purple-900/40 backdrop-blur-lg border border-primary/30 p-4 transition-all duration-500 hover:scale-105">
+                      <div className="flex gap-4">
+                        <div className="flex-1">
+                          <img src={ikoyiold} alt="Iru Before" className="rounded-xl w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
+                          <p className="mt-2 text-white/80 text-center font-semibold">Before</p>
+                        </div>
+                        <div className="flex-1">
+                          <img src={ikoyinew} alt="Iru Now" className="rounded-xl w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
+                          <p className="mt-2 text-primary text-center font-semibold">Now</p>
+                        </div>
+                      </div>
+                      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/70 px-4 py-2 rounded-full text-white text-sm font-bold shadow-lg backdrop-blur-md">
+                        Ikoyi Club, Ikoyi
+                      </div>
+                    </div>
 
-    
-    </div>
+                    <div className="group relative rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-black/70 via-primary/30 to-purple-900/40 backdrop-blur-lg border border-primary/30 p-4 transition-all duration-500 hover:scale-105">
+                      <div className="flex gap-4">
+                        <div className="flex-1">
+                          <img src={old} alt="Market Before" className="rounded-xl w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
+                          <p className="mt-2 text-white/80 text-center font-semibold">Before</p>
+                        </div>
+                        <div className="flex-1">
+                          <img src={neww} alt="Market Now" className="rounded-xl w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
+                          <p className="mt-2 text-primary text-center font-semibold">Now</p>
+                        </div>
+                      </div>
+                      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/70 px-4 py-2 rounded-full text-white text-sm font-bold shadow-lg backdrop-blur-md">
+                        Bridge market, Victoria Island
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
+                {/* Footer / Notes */}
+                <div className="text-sm text-muted-foreground">
+                  <p>Note: This summary synthesises multiple historical sources. For in-depth research consult local archives, oral histories and academic references on Lagos and the Iru Kingdom.</p>
+                </div>
+              </div>
             </div>
           </div>
-        )   
-        }
+  )}
         
 
 {/* the about  */}
@@ -536,7 +462,7 @@ export const AboutSection = () => {
                   <X size={32} />
                 </button>
                 <h2 className="text-4xl font-bold mb-2 relative z-10">Full Biography</h2>
-                <p className="text-white/90 text-lg relative z-10">Oba Abdulwasiu Omogbolahan Lawal - 15th Oniru of Iruland</p>
+                <p  class='namee'className="text-white/90 text-lg relative z-10">Oba Abdulwasiu Omogbolahan Lawal - 15th Oniru of Iruland</p>
               </div>
 
               {/* Scrollable Content */}
@@ -581,6 +507,8 @@ export const AboutSection = () => {
                     </div>
                     <div className="bg-gradient-to-r from-primary/10 to-purple-500/10 p-4 rounded-lg border-l-4 border-primary">
                       <p className="font-bold text-foreground">1999-2007: Aide-de-Camp to Governor Tinubu</p>
+                     <img src={ADC} alt="kabiyesi as an ADC to EX President Tinubu" />
+
                       <p className="text-muted-foreground text-sm">Chief Security Officer to the Governor of Lagos State</p>
                     </div>
                   </div>
