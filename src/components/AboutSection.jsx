@@ -393,6 +393,58 @@ export const AboutSection = () => {
                   </div>
                 </div>
 
+                {/* Oniru Family Land & Colonial Legacy */}
+                <div className="space-y-6">
+                  <h4 className="text-xl font-bold text-foreground">The Oniru Family Land & Colonial Legacy</h4>
+                  
+                  {/* Introduction Card */}
+                  <div className="bg-gradient-to-r from-primary/10 to-purple-500/10 border-l-4 border-primary p-5 rounded-lg">
+                    <p className="text-base leading-relaxed text-muted-foreground">
+                      <span className="text-lg font-bold text-primary">The Oniru Family</span> held expansive territories stretching across the lagoon and coastal settlements. From the Marina to Ikoyi, Isago Creek, and distant Magoko, the Oniru administered numerous waterside villages through appointed representatives (Baale). The riverine nature of these lands made fishing a primary livelihood, while early European traders—Portuguese, Dutch, French and British—established trading depots that transformed the landscape and economy.
+                    </p>
+                  </div>
+
+                  {/* Three-Phase Timeline */}
+                  <div className="space-y-3">
+                    <p className="font-semibold text-foreground">Land Acquisitions & The Colonial Era</p>
+                    
+                    {/* Phase 1: First Acquisition */}
+                    <div className="bg-white border rounded-lg p-4 border-l-4 border-amber-500">
+                      <p className="font-bold text-amber-700 mb-2">Phase 1: First Acquisition (circa 1850)</p>
+                      <p className="text-sm text-muted-foreground leading-relaxed">
+                        The British acquired land for the UAC Headquarters and Christ Church Cathedral, forcing the Oniru Palace to relocate to the Five Cowries Creek area. There, the Oniru family operated a ferry service, charging 5 cowries per crossing—the origin of the Creek Bridge's iconic name.
+                      </p>
+                    </div>
+
+                    {/* Phase 2: Strategic Location Loss */}
+                    <div className="bg-white border rounded-lg p-4 border-l-4 border-orange-500">
+                      <p className="font-bold text-orange-700 mb-2">Phase 2: Strategic Location (Late 1800s)</p>
+                      <p className="text-sm text-muted-foreground leading-relaxed">
+                        The Oniru's palace at the Five Cowries Creek bend—a strategic harbor vantage point—was acquired for an observatory and military garrison. The family was displaced again, eventually moving to Igbodu Village on Victoria Island, a remote inland area within Iruland.
+                      </p>
+                    </div>
+
+                    {/* Phase 3: Mass Acquisitions */}
+                    <div className="bg-white border rounded-lg p-4 border-l-4 border-red-500">
+                      <p className="font-bold text-red-700 mb-2">Phase 3: Massive Land Loss (1900s)</p>
+                      <p className="text-sm text-muted-foreground leading-relaxed">
+                        By 1900, the colonial government had acquired vast territories: the Race Course (now Tafawa Balewa Square), Igbosere Road (City Hall & Kings College), south-west Ikoyi, Mcgregor Canal to Eletu Farm, and most of Victoria Island. In 1907, Mekunwen land was taken; later, Eleke Crescent (now home to foreign embassies) was seized—eroding the Oniru's dominion.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Modern Iruland Summary */}
+                  <div className="bg-gradient-to-br from-purple-500/10 to-primary/10 border border-primary/30 p-5 rounded-lg">
+                    <p className="font-semibold text-foreground mb-3">Iruland Today (2002–Present)</p>
+                    <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+                      The creation of <strong>Iru-Victoria Island Local Government Area in 2002</strong> marked official recognition of Iruland as a distinct administrative entity. Today, HRM Oba Abdulwasiu Omogbolahan Lawal CON governs 13 villages including Abule Ode, Apese, Falomo, Itinrin, Oroke, and others—territories once entirely under Oniru administration.
+                    </p>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      Iru-Victoria Island is now one of Nigeria's most elite and prosperous zones. Surrounded by the Atlantic Ocean, Lagos Lagoon, the Five Cowries Creek, and Macgregor Canal, it hosts two five-star hotels, diplomatic missions, bank headquarters, oil companies and multinationals—making it the nerve centre of business and tourism.
+                    </p>
+                  </div>
+                </div>
+
                 {/* Past Onirus (compact timeline) */}
                 <div className="space-y-4">
                   <h4 className="text-xl font-bold text-foreground">Past Onirus</h4>
