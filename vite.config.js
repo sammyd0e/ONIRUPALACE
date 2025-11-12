@@ -12,5 +12,5 @@ export default defineConfig({
     },
   },
   assetsInclude: ["**/*.JPG"],
-  base:process.env.VITE_BASE_PATH || '/ONIRUPALACE'
+  base: process.env.VITE_BASE_PATH || '/'
 });
