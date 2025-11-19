@@ -21,6 +21,9 @@ import odunloye from "/projects/odunloye.jpeg"
 import abiodun from "/projects/abiodun.jpeg"
 import idowu from "/projects/abiodun.jpeg"
 
+// Local copy of the Eko Rice image (place the downloaded image at public/projects/PIX-0020-768x518.jpg)
+import ekoRice from "/projects/PIX-0020-768x518.jpg"
+
 import old from "/projects/bridgeold.jpg"
 import neww from "/projects/bridgenew.jpg"
 import ikoyinew from "/projects/ikoyiclubnew.jpg"
@@ -577,7 +580,7 @@ export const AboutSection = () => {
                     </div>
                     <div className="bg-gradient-to-r from-primary/10 to-purple-500/10 p-4 rounded-lg border-l-4 border-primary">
                       <p className="font-bold text-foreground">1999-2007: Aide-de-Camp to Governor Tinubu</p>
-                     <img src={ADC} alt="kabiyesi as an ADC to EX President Tinubu" />
+                     <img src={ADC} alt="kabiyesi as an ADC to EX Governor Tinubu" />
 
                       <p className="text-muted-foreground text-sm">Chief Security Officer to the Governor of Lagos State</p>
                     </div>
@@ -596,7 +599,11 @@ export const AboutSection = () => {
                     <div className="bg-gradient-to-br from-primary/5 to-purple-500/5 p-5 rounded-xl border border-primary/20">
                       <p className="font-bold text-primary text-lg mb-3">Commissioner for Agriculture & Cooperatives (2011-2015)</p>
                       <ul className="space-y-2 text-muted-foreground">
-                        <li>✓ Established The Eko Rice Mill, Imota - landmark agricultural infrastructure</li>
+                        <li>✓ Established The Eko Rice Mill, Imota - landmark agricultural infrastructure
+                          <span>
+                            <img src={ekoRice} alt="Eko Rice Mill, Imota" className="inline-block ml-2 w-100 h-auto rounded-md shadow-sm" />
+                          </span>
+                        </li>
                         <li>✓ Launched School Agric Programme and Agric-YES Summer School</li>
                         <li>✓ Created Eko Farmers Mart and expanded cooperative societies (10,000+ societies)</li>
                         <li>✓ Generated direct employment for 250,000+ people in agricultural value chains</li>
