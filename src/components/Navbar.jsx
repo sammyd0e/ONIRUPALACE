@@ -1,30 +1,52 @@
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 
 const navItems = [
-  { name: "Home", href: "/" }, 
+  { name: "Home", href: "/" },
   { name: "Culture", href: "/culture" },
   { name: "Empowerment", href: "/empowerment" },
   { name: "Health", href: "#projects" },
   { name: "Environment", href: "/environment" },
   { name: "Infastructure", href: "/heritagehub" },
   { name: "Welfare", href: "/heritagehub" },
-]; 
+];
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  
+
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.screenY > 10);
+      setIsScrolled(window.scrollY > 10);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const renderNavItem = (item, key, onClick) => {
+    const isInternal = item.href && item.href.startsWith("/");
+    const className = "text-foreground/80 hover:text-primary transition-colors duration-300 nameee";
+
+    if (isInternal) {
+      return (
+        <Link key={key} to={item.href} className={className} onClick={onClick}>
+          {item.name}
+        </Link>
+      );
+    }
+
+    // external or anchor link
+    return (
+      <a key={key} href={item.href} className={className} onClick={onClick}>
+        {item.name}
+      </a>
+    );
+  };
+
   return (
     <nav
       className={cn(
@@ -39,21 +61,13 @@ export const Navbar = () => {
         >
           <span className="relative z-10 flex items-center gap-2">
             <img src="/projects/LOGO.ONIRU.jpeg" alt="Oniru Logo" className="h-8 w-8 object-contain rounded-full" />
-            <span className="text-glow text-foreground text-primary"> <span class='nameee'>Oniru Kindom</span></span>
+            <span className="text-glow text-foreground text-primary"> <span className='nameee'>Oniru Kindom</span></span>
           </span>
         </a>
 
         {/* desktop nav */}
         <div className="hidden md:flex space-x-8">
-          {navItems.map((item, key) => (
-            <a
-              key={key}
-              href={item.href}
-                class='nameee' className="text-foreground/80 hover:text-primary transition-colors duration-300"
-            >
-              {item.name}
-            </a>
-          ))}
+          {navItems.map((item, key) => renderNavItem(item, key))}
         </div>
 
         {/* mobile nav */}
@@ -63,7 +77,7 @@ export const Navbar = () => {
           className="md:hidden p-2 text-foreground z-50"
           aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
         >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}{" "}
+          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
 
         <div
@@ -76,16 +90,7 @@ export const Navbar = () => {
           )}
         >
           <div className="flex flex-col space-y-8 text-xl">
-            {navItems.map((item, key) => (
-              <a
-                key={key}
-                href={item.href}
-                 class='nameee'className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {item.name}
-              </a>
-            ))}
+            {navItems.map((item, key) => renderNavItem(item, key, () => setIsMenuOpen(false)))}
           </div>
         </div>
       </div>
