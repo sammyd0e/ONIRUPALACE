@@ -17,7 +17,7 @@ export const Footer = () => {
         &copy; {new Date().getFullYear()} Oniru Kindom.co. All rights reserved.
       </p>
 
-      <p class="nameee" className="text-sm text-primary md:text-2xl">Partnership</p>
+      <p class="name" className="text-sm text-primary md:text-2xl">Sponsors</p>
 
       <div className="flex flex-row justify-center items-center gap-4  w-6 md:w-12 lg:w-20 ">
          <img src={access} alt="access bank Nigeria" />
