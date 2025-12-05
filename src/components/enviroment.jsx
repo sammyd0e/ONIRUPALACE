@@ -2,10 +2,7 @@ import { Navbar } from "./Navbar.jsx";
 import { ThemeToggle } from "./ThemeToggle.jsx";
 import { StarBackground } from './StarBackground.jsx'
 import { Footer } from "./Footer.jsx";
-import cleaning from "/projects/cleaning.JPG";
-import plants from "/projects/plants.JPG";
 import lawman from "/projects/LAWMA.JPG";
-import clanningII from "/projects/cleaningII.JPG";
 import env1 from "/projects/env1.jpeg";
 import env2 from "/projects/env2.jpeg";
 import env3 from "/projects/env3.jpeg";
@@ -23,27 +20,27 @@ export function ENviroment() {
     },
     {
       name: "The Palms Shopping Mall",
-      image: env2,
+      image: env5,
       description: "Upscale retail and entertainment complex serving the affluent Oniru community"
     },
     {
       name: "Get Arena",
-      image: env3,
+      image: env2,
       description: "State-of-the-art entertainment and events venue"
     },
     {
       name: "Landmark Centre",
-      image: env4,
+      image: env3,
       description: "Premier commercial and retail destination"
     },
     {
       name: "Oriental Hotel",
-      image: env5,
+      image: env7,
       description: "Iconic luxury hospitality establishment"
     },
     {
       name: "Oniru Palace",
-      image: env6,
+      image: env4,
       description: "Historic seat of traditional authority and cultural significance"
     }
   ];
@@ -55,13 +52,13 @@ export function ENviroment() {
       <StarBackground />
       
       {/* Hero Section */}
-      <section className="relative py-24 px-6 bg-gradient-to-b from-slate-900 via-slate-800 to-white">
+      <section className="relative py-24 px-6 bg-[url('/Users/sammydoe/Documents/beautiful-react-tailwind-portfolio-main/public/projects/env1.jpeg')] bg-no-repeat bg-center bg-cover">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
             Oniru, Lagos
           </h1>
           <p className="text-xl text-gray-200 mb-2 font-light">An Official Area Guide</p>
-          <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+          <p  className="text-lg text-white max-w-3xl mx-auto">
             A comprehensive overview of Lagos's most prestigious residential and commercial district
           </p>
         </div>
@@ -186,16 +183,16 @@ export function ENviroment() {
             <h3 className="text-2xl font-semibold text-slate-900 mb-6">Community Spaces & Amenities</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
               <div className="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition h-56">
-                <img src={plants} alt="Community Gardens" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+                <img src={env2} alt="Community Gardens" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
               </div>
               <div className="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition h-56">
-                <img src={cleaning} alt="Community Maintenance" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+                <img src={env5} alt="Community Maintenance" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
               </div>
               <div className="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition h-56">
                 <img src={lawman} alt="Environmental Care" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
               </div>
               <div className="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition h-56">
-                <img src={clanningII} alt="Community Cleanliness" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+                <img src={env5} alt="Community Cleanliness" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
               </div>
             </div>
           </div>
