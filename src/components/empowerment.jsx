@@ -62,12 +62,12 @@ export function Empowerment() {
               {/* Center Content */}
               <div className="lg:col-span-1 animate-fade-in-delay-2 flex flex-col justify-center">
                 <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 shadow-xl">
-                  <h2 className="text-3xl font-bold mb-6 text-primary">Oba Oniru Lauds LJLA</h2>
+                  <h2 class='nameee' className="text-xl font-bold mb-5 text-primary">YOUTH EMPOWERMENT</h2>
                   <p className="text-foreground/80 leading-relaxed mb-6 text-lg">
                     <span className="font-semibold text-primary">Championing Youth & Community Engagement</span>
                   </p>
                   <p className="text-foreground/70 leading-relaxed mb-6">
-                    "LJLA is a testament to the power of investing in young minds. It is through institutions like this that we can create a generation of visionary leaders who are not just reactive but proactive in shaping the future."
+                     It is through institutions like this that we can create a generation of visionary leaders who are not just reactive but proactive in shaping the future."
                   </p>
                   <div className="flex items-center text-primary font-semibold hover:translate-x-2 transition-transform">
                     <span>Read Full Story</span>
